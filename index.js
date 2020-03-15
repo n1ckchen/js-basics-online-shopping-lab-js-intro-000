@@ -11,6 +11,15 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
+ cart.push({[item] : Math.floor(Math.random()*((100 -1) +1) + 1)});
+      console.log(`${item} has been added to your cart.`);
+      return cart;
+ addToCart("bananas");
+ addToCart("egg");
+ addToCart("strawberries");
+
+ return getCart();
+ }
 }
 
 function viewCart() {
